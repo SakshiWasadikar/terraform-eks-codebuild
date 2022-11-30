@@ -12,7 +12,7 @@ phases:
       - terraform plan
   build:
     commands:
-      - terraform apply -var-file="${terraform.workspace}.tfvars"
+      - terraform apply -var-file="${terraform.workspace}"
   post_build:
     commands:
         - echo "[Post Build] : $${ALL_PHASES_STATUS}"
