@@ -1,0 +1,16 @@
+## Configure tfvars file for "dev" env
+
+instance_type1 = "t3.small"
+instance_type2 = "t3.small"
+vpc = "dev-vpc"
+cidr = "10.0.0.0/16"
+artifacts_type = "NO_ARTIFACTS"
+project_name = "eks-terraform"
+git_clone_depth = "1"
+buildspec_file_absolute_path = "buildspecs/buildspec.yml"
+codebuild_role_arn = ""
+build_image = "aws/codebuild/amazonlinux2-x86_64-standard:3.0"
+environment = "develop"
+compute_type = "BUILD_GENERAL1_MEDIUM"
+environment_image = "hashicorp/terraform:1.2.2"
+environment_type = "LINUX_CONTAINER"
